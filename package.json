@@ -12,11 +12,10 @@
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.3.0",
+    "@fortawesome/free-brands-svg-icons": "^6.4.0",
     "@fortawesome/free-solid-svg-icons": "^6.3.0",
     "@fortawesome/vue-fontawesome": "^3.0.3",
     "@vueuse/motion": "^2.0.0-beta.23",
-    "smooth-scrollbar": "^8.8.1",
-    "smooth-vuebar": "^1.4.0",
-    "vue-smooth-scrollbar": "^1.0.3"
+    "smooth-scrollbar": "^8.8.1"
   }
 }

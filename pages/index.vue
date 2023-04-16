@@ -1,4 +1,5 @@
 <script setup>
+import { icon } from '@fortawesome/fontawesome-svg-core';
 import Scrollbar, { ScrollbarPlugin } from 'smooth-scrollbar';
 import OverscrollPlugin from 'smooth-scrollbar/plugins/overscroll';
 
@@ -328,6 +329,11 @@ function handleBlobScroll(oldval) {
   }
 }
 
+const iconAmounts = ref(2);
+const hasMid = ref(0);
+const many = ref(iconAmounts.value - hasMid.value);
+const iconTan = ref(Math.tan(Math.PI/many.value));
+
 onMounted(() => {
   // load the plugin
   Scrollbar.use(DisableScrollPlugin);
@@ -478,6 +484,54 @@ onMounted(() => {
           <span>JOIN OUR DISCORD <font-awesome-icon :icon="['fas', 'arrow-right']" /></span>
         </a>
       </div>
+      <div id="skillCircle">
+        <!-- PC Bypasses -->
+        <div class="skill">
+          <img src="/windowsCurved.png">
+          <div class="skillCirc"></div>
+          <font-awesome-icon class="icon" :icon="['fab', 'windows']" />
+        </div>
+
+        <!-- Apple Bypasses -->
+        <div class="skill">
+          <img src="/appleCurved.png">
+          <div class="skillCirc"></div>
+          <font-awesome-icon class="icon" :icon="['fab', 'apple']" />
+        </div>
+
+        <!-- Android Bypasses -->
+        <div class="skill">
+          <img src="/androidCurved.png">
+          <div class="skillCirc"></div>
+          <font-awesome-icon class="icon" :icon="['fab', 'android']" />
+        </div>
+
+        <!-- Chromebook Bypasses -->
+        <div class="skill">
+          <img src="/cbCurved.png">
+          <div class="skillCirc"></div>
+          <font-awesome-icon class="icon" :icon="['fab', 'chrome']" />
+        </div>
+
+        <!-- Games -->
+        <div class="skill">
+          <img src="/gamesCurved.png">
+          <div class="skillCirc"></div>
+          <font-awesome-icon class="icon" :icon="['fas', 'gamepad']" />
+        </div>
+
+         <!-- Proxies -->
+        <div class="skill">
+          <img src="/proxiesCurved.png">
+          <div class="skillCirc"></div>
+          <font-awesome-icon class="icon" :icon="['fas', 'server']" />
+        </div>
+
+        <div class="mainText">
+          <h2>SERVICES WE PROVIDE:</h2>
+          <p>We provide a variety of services for your choosing.</p>
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -549,6 +603,94 @@ body.darkScrollbar::-webkit-scrollbar-corner {
     background-color: #1a1c1e;
 } */
 
+.skill .icon {
+  position: absolute;
+  bottom: -10px;
+  color: #7130C5;
+  font-size: 40px;
+}
+.skill img {
+  position: absolute;
+  color: white;
+  top: 15px;
+  text-align: center;
+}
+.skill {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: calc(50% - 50px);
+  top: calc(50% - 50px);
+  width: 100px;
+  height: 100px;
+}
+.skillCirc {
+  position: relative;
+  height: 10px;
+  width: 10px;
+  background-color: #D64141;
+  border-radius: 50%;
+}
+
+.skill:nth-child(1) {
+    transform: translateY(-250px);
+}
+
+.skill:nth-child(2) {
+    transform: rotate(60deg) translateY(-250px);
+}
+
+.skill:nth-child(3) {
+    transform: rotate(120deg) translateY(-250px);
+}
+
+.skill:nth-child(4) {
+    transform: rotate(180deg) translateY(-250px);
+}
+
+.skill:nth-child(5) {
+    transform: rotate(240deg) translateY(-250px);
+}
+
+.skill:nth-child(6) {
+    transform: rotate(300deg) translateY(-250px);
+}
+
+#skillCircle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  transform: translateX(-50%);
+  right: 0;
+}
+
+#skillCircle .mainText {
+  font-family: 'Exo';
+  line-height: 1em;
+  color: #7130C5;
+  text-align: center;
+}
+
+#skillCircle::before {
+  position: absolute;
+  content: "";
+  inset: 0;
+  border-radius: 50%;
+  padding: 3px;
+  background: linear-gradient(126.06deg, #6100FF -6.51%, #CE1623 97.48%, #E64848 97.49%);
+
+  -webkit-mask: 
+     linear-gradient(#fff 0 0) content-box, 
+     linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+          mask-composite: exclude; 
+}
+
 #mainContentPage2 h1 {
   font-family: 'Exo';
   font-style: normal;
@@ -576,8 +718,12 @@ body.darkScrollbar::-webkit-scrollbar-corner {
 #page1 {
   height: 150vh;
 }
+
 #page2 {
   position: absolute;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   top: 150vh;
   height: 100vh;
 }
