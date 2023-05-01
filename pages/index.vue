@@ -695,8 +695,8 @@ body.darkScrollbar::-webkit-scrollbar-corner {
   font-family: 'Exo';
   font-style: normal;
   font-weight: 400;
-  font-size: 45px;
-  line-height: 60px;
+  font-size: 2.35vw;
+  line-height: 6.5vh;
 
   background: linear-gradient(90.83deg, #5E06E6 2.6%, #A80F7A 55.45%, #F41809 115.35%);
   -webkit-background-clip: text;
@@ -1004,7 +1004,7 @@ body.darkScrollbar::-webkit-scrollbar-corner {
   opacity: 0;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
   #overlay {
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(15px);
