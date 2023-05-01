@@ -446,7 +446,7 @@ onMounted(() => {
           :initial="{opacity: 0}"
           :enter="{opacity: 1}"
           :delay="200"
-        ><span id="firstText" :style="firstTextStyle">Bypass</span><span style="width: 18px;"></span><span id="secondText" :style="secondTextStyle">Anything</span></h1>
+        ><span id="firstText" :style="firstTextStyle">Bypass</span><span style="width: 0.27em;"></span><span id="secondText" :style="secondTextStyle">Anything</span></h1>
         <p
           id="subText"
           v-motion
