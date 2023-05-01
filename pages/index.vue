@@ -13,6 +13,7 @@ const firstTextStyle = ref({
 let blobTop = 0;
 let blobScrollEnabled = true;
 
+
 function createFirstBG()
 {
   let video = document.createElement("video");
@@ -127,6 +128,8 @@ function handleParallax() {
   var target = document.getElementById("bgVideo");
   var header = document.getElementById("header");
   var gradientBG = document.getElementById("gradientBG");
+
+
   
   if (sc > -1360)
   {
@@ -344,10 +347,11 @@ onMounted(() => {
         direction: 'x',
       },
       overscroll: {
-        effect: 'glow'
+        effect: 'bounce'
       }
     },
-    damping: 0.05
+    damping: 0.05,
+    continuousScrolling: false
   });
   Scrollbar.detachStyle();
 
@@ -665,7 +669,7 @@ body.darkScrollbar::-webkit-scrollbar-corner {
   position: absolute;
   width: 500px;
   height: 500px;
-  transform: translateX(-50%);
+  margin-right: 13%;
   right: 0;
 }
 
@@ -731,7 +735,7 @@ body.darkScrollbar::-webkit-scrollbar-corner {
 #gradientBG {
   position: fixed;
   width: 100vw;
-  height: 100vh;
+  height: 110vh;
   top: 0;
   left: 0;
   background-image: linear-gradient(106.83deg,
@@ -1008,6 +1012,16 @@ body.darkScrollbar::-webkit-scrollbar-corner {
   #overlay {
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(15px);
+  }
+
+  #page2 {
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+  }
+
+  #skillCircle {
+    display: none;
   }
 
   #mainContentPage2 h1 {
