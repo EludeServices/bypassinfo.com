@@ -609,14 +609,14 @@ body.darkScrollbar::-webkit-scrollbar-corner {
 
 .skill .icon {
   position: absolute;
-  bottom: -0.5vw;
+  bottom: -1.1vh;
   color: #7130C5;
-  font-size: 2.1vw;
+  font-size: 4.4vh;
 }
 .skill img {
   position: absolute;
   color: white;
-  top: 0.8vw;
+  top: 1.7vh;
   text-align: center;
 }
 .skill {
@@ -625,41 +625,41 @@ body.darkScrollbar::-webkit-scrollbar-corner {
   justify-content: center;
   align-items: center;
   position: absolute;
-  left: calc(50% - 2.6vw);
-  top: calc(50% - 2.6vw);
-  width: 5.21vw;
-  height: 5.21vw;
+  left: calc(50% - 5.4vh);
+  top: calc(50% - 5.4vh);
+  width: 10.8vh;
+  height: 10.8vh;
 }
 .skillCirc {
   position: relative;
-  height: 0.5vw;
-  width: 0.5vw;
+  height: 1.1vh;
+  width: 1.1vh;
   background-color: #D64141;
   border-radius: 50%;
 }
 
 .skill:nth-child(1) {
-    transform: translateY(-13vw);
+    transform: translateY(-27vh);
 }
 
 .skill:nth-child(2) {
-    transform: rotate(60deg) translateY(-13vw);
+    transform: rotate(60deg) translateY(-27vh);
 }
 
 .skill:nth-child(3) {
-    transform: rotate(120deg) translateY(-13vw);
+    transform: rotate(120deg) translateY(-27vh);
 }
 
 .skill:nth-child(4) {
-    transform: rotate(180deg) translateY(-13vw);
+    transform: rotate(180deg) translateY(-27vh);
 }
 
 .skill:nth-child(5) {
-    transform: rotate(240deg) translateY(-13vw);
+    transform: rotate(240deg) translateY(-27vh);
 }
 
 .skill:nth-child(6) {
-    transform: rotate(300deg) translateY(-13vw);
+    transform: rotate(300deg) translateY(-27vh);
 }
 
 #skillCircle {
@@ -667,8 +667,8 @@ body.darkScrollbar::-webkit-scrollbar-corner {
   justify-content: center;
   align-items: center;
   position: absolute;
-  width: 26.042vw;
-  height: 26.042vw;
+  width: 54vh;
+  height: 54vh;
   margin-right: 13%;
   right: 0;
 }
