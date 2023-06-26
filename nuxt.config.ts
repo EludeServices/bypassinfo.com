@@ -14,5 +14,5 @@ export default defineNuxtConfig({
                     rgb(255, 0, 0) 106.35%); background-color: initial; margin: 0;"
             }
         }
-    }
+    }  
 })
