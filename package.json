@@ -8,14 +8,17 @@
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
-    "nuxt": "^3.3.1"
+    "nuxt": "^3.5.3"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^6.3.0",
+    "@fortawesome/fontawesome-svg-core": "^6.4.0",
     "@fortawesome/free-brands-svg-icons": "^6.4.0",
-    "@fortawesome/free-solid-svg-icons": "^6.3.0",
+    "@fortawesome/free-solid-svg-icons": "^6.4.0",
     "@fortawesome/vue-fontawesome": "^3.0.3",
-    "@vueuse/motion": "^2.0.0-beta.23",
-    "smooth-scrollbar": "^8.8.1"
+    "@vueuse/motion": "^2.0.0",
+    "jquery": "^3.7.0",
+    "markdown-it": "^13.0.1",
+    "markdown-it-container": "^3.0.0",
+    "smooth-scrollbar": "^8.8.4"
   }
 }
