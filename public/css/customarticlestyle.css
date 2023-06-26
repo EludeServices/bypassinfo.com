@@ -1,0 +1,196 @@
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #001014 !important;
+        color: #ccc !important;
+    }
+    
+    ul.nav li.active a, ul.nav-mobile li.active a {
+        color: #ccc !important;
+        border-left-color: rgba(255, 255, 255, 0.6) !important;
+    }
+    
+    ul.dropdown-menu, .sidenav, .modal-backdrop {
+        background-color: rgba(0, 0, 0, 0.56) !important;
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        -moz-backdrop-filter: blur(10px);
+    }
+    
+    li.open a.navbar-button-icon > i {
+        color: #000 !important;
+    }
+    
+    ul.dropdown-menu button.btn {
+        background-color: #34c !important;
+    }
+    
+    ul.dropdown-menu li > a {
+        color: #ccc !important;
+    }
+    
+    
+    nav.navbar {
+        background-color: #293034 ;
+    }
+    
+    nav.navbar * {
+        color: #eee;
+    }
+    
+    nav.navbar .btn-group label, ul.nav-mobile li a {
+        background-color: #293034;
+    }
+    
+    nav.navbar .btn-group label:hover,
+    ul.nav-mobile li a:hover {
+        background-color: #223;
+    }
+    
+    nav.navbar .btn-group label.active,
+    ul.nav-mobile li a:active  {
+        background-color: #000;
+    }
+    
+    th {
+        background-color: #505356;
+        color: #ddd;
+    }
+    
+    td {
+        background-color: #202326;
+        color: #ddd;
+    }
+    
+    a {
+        color: #abf;
+    }
+    
+    a:hover {
+        color: #fff;
+    }
+}
+
+#doc {
+    font-family: 'Fira Code', 'Fyra Code', "SF Mono", "Menlo", "Consolas", "Hiragino Kaku Gothic ProN", sans-serif;
+}
+
+.CodeMirror {
+    font-family: 'Fira Code', 'Fyra Code', "SF Mono", "Menlo", "Consolas", monospace, "Hiragino Kaku Gothic ProN", sans-serif !important;
+    font-size: 1.0em;
+}
+
+.otaku {
+  color: #aaa;
+}
+.bluehl {
+  color: #5566ff;
+  font-weight: bold;
+}
+
+.redhl {
+  color: #ff6655;
+  font-weight: bold;
+}
+
+.orangehl, em > strong {
+  color: #f09944;
+  font-weight: bold;
+  font-style: normal;
+}
+
+.markdown-body code, .markdown-body tt
+{
+    background-color: #2a376875 !important;
+}
+
+.alert {
+    border-color: transparent;
+}
+.alert h4 {
+    color: inherit;
+}
+.alert-dismissable .close,
+.alert-dismissible .close {
+    color: inherit;
+}
+.alert-success {
+    color: rgb(150, 207, 151);
+    background-color: rgb(53, 72, 36);
+    border-color: rgb(72, 103, 47);
+}
+.alert-success hr {
+    border-top-color: rgb(77, 109, 49);
+}
+.alert-success .alert-link {
+    color: rgb(173, 219, 175);
+}
+.alert-info {
+    color: rgb(129, 189, 219);
+    background-color: rgb(27, 60, 77);
+    border-color: rgb(35, 102, 116);
+}
+.alert-info hr {
+    border-top-color: rgb(37, 109, 123);
+}
+.alert-info .alert-link {
+    color: rgb(155, 203, 228);
+}
+.alert-warning {
+    color: rgb(209, 182, 135);
+    background-color: rgb(59, 52, 18);
+    border-color: rgb(120, 88, 24);
+}
+.alert-warning hr {
+    border-top-color: rgb(126, 92, 25);
+}
+.alert-warning .alert-link {
+    color: rgb(220, 198, 159);
+}
+.alert-danger {
+    color: rgb(205, 114, 112);
+    background-color: rgb(68, 35, 35);
+    border-color: rgb(101, 47, 55);
+}
+.alert-danger hr {
+    border-top-color: rgb(107, 48, 58);
+}
+.alert-danger .alert-link {
+    color: rgb(215, 138, 137);
+}
+
+.markdown-body .highlight pre, .markdown-body pre {
+    background-color: #151e26 !important;
+    color: rgb(204, 204, 204) !important;
+} 
+
+u {
+  text-decoration: none;
+  /*border-radius: 3px;
+  
+  box-shadow:1px 1px 4px rgba(0,0,0,0.3); */
+  padding-left:4px;
+  padding-right:4px;
+  
+  background: linear-gradient(rgba(255,255,255,0) 0%, rgba(255,255,255,0) 64%, rgba(255,250,0,0.39) 0%, rgba(255,250,0,0.39) 100%) no-repeat 50% 50% / 100% 100%;
+}
+
+u:hover  {
+  border-radius: 3px;
+  box-shadow:1px 1px 4px rgba(0,0,0,0.3); 
+}
+
+.hover_memo {
+    font-family: "Ten Mincho", serif;
+}
+
+.hover_memo:before {
+    content: "🐈";
+}
+
+.hover_memo * {
+    display:none;
+}
+
+.hover_memo:hover * {
+    display:inline;
+}
