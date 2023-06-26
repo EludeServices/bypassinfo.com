@@ -178,7 +178,7 @@ function handleHeaderAnimation(oldval) {
   if (oldValue > currentValue) {
     // each animation occurs at a specific scroll position, i might have to figure out how to use the dynamically
     // if we are past 350, trigger the first text
-    if (currentValue < -350)
+    if (currentValue < -150)
     {
       if (!(firstOpacity < 0 && firstRight > 385)) {
         firstText.style.opacity = (easeInOutQuad(time, 1, 0.1, 1)).toString();
@@ -192,7 +192,7 @@ function handleHeaderAnimation(oldval) {
     }
 
     // animate second text to right fade
-    if (currentValue < -550)
+    if (currentValue < -250)
     {
       if (!(secondOpacity <= 0 && secondLeft >= 385)) {
         secondText.style.opacity = (easeInOutQuad(time2, 1, 0.1, 1)).toString();
@@ -206,7 +206,7 @@ function handleHeaderAnimation(oldval) {
     }
 
     // animate subtex to regular fade
-    if (currentValue < -700)
+    if (currentValue < 400)
     {
       console.log(`time3: ${time3}`);
 
@@ -219,7 +219,7 @@ function handleHeaderAnimation(oldval) {
       }
     }
 
-    if (currentValue < -850)
+    if (currentValue < -650)
     {
       console.log(`time4: ${time4}`);
 
@@ -435,14 +435,14 @@ onMounted(() => {
             <span>PROXY</span>
           </NuxtLink>
 
-          <NuxtLink class="navLink" to="/proxy">
+          <NuxtLink class="navLink" to="/bypasses">
             <span>BYPASSES</span>
           </NuxtLink>
         </div>
       </div>
       <video id="bgVideo" v-motion-fade autoplay loop muted playsinline>
-        <source src="/fullbgloop.webm" type="video/webm"/>
-        <source src="/fullbgloop.mp4" type="video/mp4"/>
+        <source src="/video/fullbgloop.webm" type="video/webm"/>
+        <source src="/video/fullbgloop.mp4" type="video/mp4"/>
       </video>
       <div id="header">
         <h1
@@ -491,42 +491,42 @@ onMounted(() => {
       <div id="skillCircle">
         <!-- PC Bypasses -->
         <div class="skill">
-          <img src="/windowsCurved.png">
+          <img src="/img/windowsCurved.png">
           <div class="skillCirc"></div>
           <font-awesome-icon class="icon" :icon="['fab', 'windows']" />
         </div>
 
         <!-- Apple Bypasses -->
         <div class="skill">
-          <img src="/appleCurved.png">
+          <img src="/img/appleCurved.png">
           <div class="skillCirc"></div>
           <font-awesome-icon class="icon" :icon="['fab', 'apple']" />
         </div>
 
         <!-- Android Bypasses -->
         <div class="skill">
-          <img src="/androidCurved.png">
+          <img src="/img/androidCurved.png">
           <div class="skillCirc"></div>
           <font-awesome-icon class="icon" :icon="['fab', 'android']" />
         </div>
 
         <!-- Chromebook Bypasses -->
         <div class="skill">
-          <img src="/cbCurved.png">
+          <img src="/img/cbCurved.png">
           <div class="skillCirc"></div>
           <font-awesome-icon class="icon" :icon="['fab', 'chrome']" />
         </div>
 
         <!-- Games -->
         <div class="skill">
-          <img src="/gamesCurved.png">
+          <img src="/img/gamesCurved.png">
           <div class="skillCirc"></div>
           <font-awesome-icon class="icon" :icon="['fas', 'gamepad']" />
         </div>
 
          <!-- Proxies -->
         <div class="skill">
-          <img src="/proxiesCurved.png">
+          <img src="/img/proxiesCurved.png">
           <div class="skillCirc"></div>
           <font-awesome-icon class="icon" :icon="['fas', 'server']" />
         </div>
