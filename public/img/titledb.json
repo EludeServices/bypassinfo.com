@@ -1,0 +1,123 @@
+{
+    "windows": [
+        {
+            "title": "How To Get Admin On Windows (V2)",
+            "id": "how-to-get-admin-on-windows-v2",
+            "author": "rsa16"
+        },
+        {
+            "title": "How To Get Admin On Windows (Recovery Method)",
+            "id": "how-to-get-admin-on-windows-recovery-method",
+            "author": "rsa16"
+        },
+        {
+            "title": "How To Get Admin On Windows (USB Method)",
+            "id": "how-to-get-admin-on-windows-usb-method",
+            "author": "rsa16"
+        },
+        {
+            "title": "Changing Your Mac Address",
+            "id": "changing-your-mac-address",
+            "author": "rsa16"
+        },
+        {
+            "title": "Bypassing Blocked Files",
+            "id": "bypassing-blocked-files-on-windows",
+            "author": "rsa16"
+        },
+        {
+            "title": "Bypassing Microsoft Screentime",
+            "id": "bypassing-microsoft-screentime",
+            "author": "rsa16"
+        }
+    ],
+
+    "android": [
+        {
+            "title": "Changing Your Mac Address",
+            "id": "changing-mac-address-on-android",
+            "author": "rsa16"
+        },
+        {
+            "title": "Family Link Bypass For Samsung",
+            "id": "samsung-family-link-bypass",
+            "author": "rsa16"
+        },
+        {
+            "title": "Samsung Family Link Downtime Bypass",
+            "id": "samsung-family-link-downtime-bypass",
+            "author": "rsa16"
+        }
+    ],
+
+    "chromebook": [
+        {
+            "title": "CAUB",
+            "id": "exploit-caub",
+            "author": "rsa16"
+        },
+        {
+            "title": "JPCMG",
+            "id": "exploit-jpcmg",
+            "author": "rsa16"
+        },
+        {
+            "title": "Killcurly",
+            "id": "exploit-killcurly",
+            "author": "rsa16"
+        },
+        {
+            "title": "LTBEEF (Inspect Method)",
+            "id": "exploit-ltbeef-inspect-method",
+            "author": "rsa16"
+        },
+        {
+            "title": "LTBEEF",
+            "id": "exploit-ltbeef",
+            "author": "rsa16"
+        },
+        {
+            "title": "LTMEAT",
+            "id": "exploit-ltmeat",
+            "author": "rsa16"
+        },
+        {
+            "title": "New Point Blank",
+            "id": "exploit-new-point-blank",
+            "author": "rsa16"
+        },
+        {
+            "title": "Point Blank",
+            "id": "exploit-point-blank",
+            "author": "rsa16"
+        },
+        {
+            "title": "UBOSS",
+            "id": "exploit-uboss",
+            "author": "rsa16"
+        },
+        {
+            "title": "Extension Bypasses",
+            "id": "extension-bypasses",
+            "author": "rsa16"
+        },
+        {
+            "title": "Extension Launcher",
+            "id": "extension-launcher",
+            "author": "rsa16"
+        }
+    ],
+
+    "ios": [
+        {
+            "title": "Removing MDM Restrictions On IOS Devices",
+            "id": "removing-mdm-restrictions-on-ios-devices",
+            "author": "rsa16"
+        },
+        {
+            "title": "Removing Screentime With An MDM Profile",
+            "id": "removing-screentime-using-an-mdm",
+            "author": "rsa16"
+        }
+    ]
+}
